@@ -1,0 +1,1 @@
+(lambda f, n, a: f(f, n, a) if n > 0 else print([0]))(lambda f, n, a: (print(a), a) if n == 1 else f(f, n - 1, a + [a[-1] + a[-2]]),eval(input()),[0, 1])
